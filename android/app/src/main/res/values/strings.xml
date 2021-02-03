@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PLN</string>
+    <string name="title_activity_main">PLN</string>
+    <string name="package_name">com.pln.emma</string>
+    <string name="custom_url_scheme">com.pln.emma</string>
+</resources>

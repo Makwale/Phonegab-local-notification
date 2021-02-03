@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notification/ngx';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +9,33 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private localNotification: PhonegapLocalNotification) {}
+
+  test(){
+    // this.localNotification.requestPermission().then(
+    //   (permission) => {
+    //     if (permission === 'granted') {
+    //       alert("Granted");
+    //       // Create the notification
+    //       this.localNotification.create('My Title', {
+    //         tag: 'message1',
+    //         body: 'My body',
+    //         icon: 'assets/icon/favicon.ico'
+    //       });
+    
+    //     }else{
+    //       alert("Not Granted")
+    //     }
+
+      
+    //   }
+    // );
+
+    this.localNotification.create('My Title', {
+              tag: 'message1',
+              body: 'My body',
+              icon: 'assets/icon/favicon.ico'
+    });
+  }
 
 }

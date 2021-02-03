@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notification/ngx';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [ PhonegapLocalNotification ]
 })
 export class HomePageModule {}
