@@ -1,0 +1,7 @@
+{
+  "name": "Phonegablocalnotification",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
